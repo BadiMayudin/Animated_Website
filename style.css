@@ -1,0 +1,282 @@
+@font-face {
+    font-family: nibus;
+    src: url(NimbusSanL-Bol.otf);
+}
+@font-face {
+    font-family: nibus2;
+    src: url(NimbusSanL-BolIta.otf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: nibus;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+#main{
+    width: 100%;
+}
+#nav{
+    padding: 3vw 10vw;
+    /* background-color: rgb(78, 87, 87); */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+#nav a{
+    color: black;
+    font-size: 1.3vw;
+    font-weight: 600;
+    text-decoration: none;
+}
+#nleft{
+    display: flex;
+    gap: 2vw;
+}
+#ncenter{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50% , -50%);
+}
+
+#hero{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10vw;
+    padding: 0 10vw ;
+}
+#hleft{
+    width: 13vw;
+}
+#hleft #himage{
+    width: 100%;
+    height: 16vw;
+    /* background-color: green; */
+}
+#himage img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+#hleft p{
+    font-weight: 100;
+    opacity: .5;
+    font-size: 1vw;
+    margin: 1vw 0;
+}
+#hleft h2{
+    font-weight: 100;
+}
+#hcenter{
+    width: 25vw;
+    min-height: 35vw;
+    position: relative;
+}
+#hcenter p{
+    width: 50%;
+    margin-top: 1vw;
+}
+#hcenter img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+#hcenter #cheading h1{
+    font-family: nibus2;
+    font-size: 4vw;
+    letter-spacing: 1px;
+    line-height: 1;
+}
+#hcenter #cheading{
+    position: absolute;
+    top: -15%;
+    left: -28%;
+}
+#hright{
+    display: flex;
+    align-items: center;
+    gap: 1.4vw
+}
+#hright #rcircle{
+    width: 4vw;
+    height: 4vw;
+    /* background-color: teal; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 1px solid #dadada;
+}
+
+/* Motive */
+
+#motive{
+    padding:0 10vw ;
+    /* background-color: rgb(208, 184, 184); */
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10vw;
+}
+#motive p{
+    width: 70%;
+    font-size: 1.5vw;
+    text-align: right;
+    line-height: 1.1;
+    letter-spacing: -.6;
+}
+#motive p span{
+    display: inline-block;
+    width: 100px;
+    border-radius: 100px;
+    height: 40px;
+    background-color: teal;
+    margin-bottom: -12px;
+    margin-top: 10px;
+}
+#motive #onespan{
+    width: 70px;
+    height: 40px;
+    background-image: url(images-20240122T034450Z-001/images/bluegirl.jpg);
+    background-position: center;
+    background-size: cover;
+}
+#motive #two{
+    background-image: url(images-20240122T034450Z-001/images/shaljam.jpg);
+    background-position: center;
+    background-size: cover;
+}
+#motive #third{
+    width: 70px;
+    height: 40px;
+    background-image: url(images-20240122T034450Z-001/images/grass.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+/* Picutr page */
+
+#firstpic{
+    width: 18vw;
+    height: fit-content;
+    /* background-color: rgb(76, 98, 98); */
+}
+#picture{
+    padding:3vw;
+    padding-left: 13vw;
+    padding-right: 12vw;
+    margin-top: 10vw;
+    display: flex;
+    justify-content: space-between;
+}
+#firstpic #picimg{
+    width: 100%;
+    height: 24vw;
+    background-color: black;
+    margin-bottom: 1vw;
+}
+#firstpic h1 , #secondpic h1{
+    line-height: 2;
+    font-size: 1.7vw;
+}
+#firstpic p ,  #secondpic p{
+    line-height: 1;
+    font-size: 1vw;
+    opacity: .7;
+    width: 60%;
+}
+#firstpic p{
+    width: 95%;
+}
+#secondpic{
+    width: 23vw;
+    height:fit-content  ;
+    /* background-color: teal;   */
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    text-align: end;
+}
+#picimg img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+#secondpic #picimg{
+    width: 100%;
+    height: 35vw;
+    /* background-color: black; */
+    margin-bottom: 1vw;
+}
+
+/* Banner */
+
+#banner{
+    width: 100%;
+    display: flex;
+    gap: 2vw;
+}
+#bimg{
+    width: 65%;
+    height: 60vh;
+}
+#bimg img{
+    width: 100%;
+    height: 100%;
+    object-position: 0% 72%;
+    object-fit: cover;
+}
+#banner #btext{
+    width: 20%;
+    /* background-color: bisque; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#btext h1{
+    font-weight: 100;
+    font-size: 2vw;
+    line-height: 1;
+}
+#btext p{
+    opacity: .8;
+    font-weight: 400;
+    line-height: 1;
+    margin-top: 1vw;
+}
+
+/* Footer */
+
+#footer{
+    width: 100%;
+    height: 100vh;
+    /* background-color: aquamarine; */
+    position: relative;
+}
+#footer video{
+    width: 100%;
+    opacity: 0;
+}
+#footer #ftext{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50% , -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#footer button{
+    padding: 1vw 1.4vw;
+    background-color: #fff;
+    border: 1px solid #bdbdbd;
+    border-radius: 100px;
+    margin-top: 1vw;
+}
